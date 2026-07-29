@@ -15,7 +15,7 @@
 
 # Print the pattern in the function given to you.
 
-# Solution 1:
+# Solution:
 
 class Solution:
     def pattern7(self, n):
@@ -24,17 +24,4 @@ class Solution:
                 print(" ", end="")
             for j in range(2*i+1):       # Job 2: print stars
                 print("*", end=" ")
-            print()
-
-# Solution 2:
-
-class Solution:
-    def pattern7(self, n):
-        for i in range(n):
-            for j in range(n -i -1):   # Job 1: print spaces
-                print(" ", end="")
-            for j in range(2*i+1):     # Job 2: print stars
-                print("*", end="")
-            for j in range(n-i-1):     # Job 3: print spaces
-                print(" ", end=" ")
             print()
