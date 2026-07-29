@@ -1,4 +1,4 @@
-# Pattern 7
+# Pattern 8
 
 # Given an integer n. 
 # You need to recreate the pattern given below for any value of N. 
@@ -6,11 +6,11 @@
 
 
 
-#    *
-#   ***
-#  *****
-# *******
 #*********
+# *******
+#  *****
+#   ***
+#    *
 
 
 # Print the pattern in the function given to you.
@@ -18,23 +18,30 @@
 # Solution 1:
 
 class Solution:
-    def pattern7(self, n):
+    def pattern8(self, n):
         for i in range(n):
-            for j in range(n -i -1):     # Job 1: print spaces
+
+            for j in range(i):
                 print(" ", end="")
-            for j in range(2*i+1):       # Job 2: print stars
-                print("*", end=" ")
+        
+            for j in range(2 * n - (2 * i + 1)):
+                print("*", end="")
+
+            for j in range(i):
+                print(" ", end="")
+
             print()
 
 # Solution 2:
 
 class Solution:
-    def pattern7(self, n):
+    def pattern8(self, n):
         for i in range(n):
-            for j in range(n -i -1):   # Job 1: print spaces
+
+            for j in range(i):
                 print(" ", end="")
-            for j in range(2*i+1):     # Job 2: print stars
+        
+            for j in range(2 * n - (2 * i + 1)):
                 print("*", end="")
-            for j in range(n-i-1):     # Job 3: print spaces
-                print(" ", end=" ")
+                
             print()

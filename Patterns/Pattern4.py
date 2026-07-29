@@ -14,10 +14,9 @@
 
 # 55555
 
-
-
 # Print the pattern in the function given to you.
 
+# Solution:
 
 class Solution:
     def pattern4(self, n):

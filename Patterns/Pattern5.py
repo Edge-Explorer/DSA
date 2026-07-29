@@ -16,6 +16,8 @@
 
 # Print the pattern in the function given to you.
 
+# Solution:
+
 class Solution:
     def pattern5(self, n):
         for i in range(n):
