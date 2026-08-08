@@ -1,27 +1,26 @@
-# Pattern 14
+# Pattern 18
 
 # Given an integer n. 
 # You need to recreate the pattern given below for any value of N. 
 # Let's say for N = 5, the pattern should look like as below:
 
-# A
+# E 
 
-# AB
+# D E 
 
-# ABC
+# C D E 
 
-# ABCD
+# B C D E 
 
-# ABCDE
+# A B C D E
 
 # Print the pattern in the function given to you.
 
-#Solution:
+# Solution:
 
 class Solution:
-    def pattern14(self, n):
+    def pattern18(self, n):
         for i in range(n):
-            # Inner loop to print alphabets from A to A + i
-            for j in range(i+1):
-                print(chr(65+j), end="")   # Print the alphabet character followed by a space
+            for j in range(ord('A')+n-1-i, ord('A')+n):
+                print(chr(j), end=" ")
             print()
