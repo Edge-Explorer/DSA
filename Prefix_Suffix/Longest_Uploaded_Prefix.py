@@ -46,10 +46,10 @@ class LUPrefix:
         self.uploaded=[False] * (n+1)
         self.longest_video= 0
         
-    def __init__(self, video: int) -> None:
+    def upload (self, video: int) -> None:
         self.uploaded[video]= True
         
-    def __init__(self) -> int:
+    def longest (self) -> int:
         while self.longest_video +1 < len(self.uploaded) and self.uploaded[self.longest_video +1]:
             self.longest_video +=1
         
