@@ -46,7 +46,7 @@
 
 # Solution:
 
-from collections import defaultdict
+from collections import defaultdict # defaultdict(int) gives us a dictionary where a missing key automatically starts at 0.
 from typing import List
 
 class Solution:
